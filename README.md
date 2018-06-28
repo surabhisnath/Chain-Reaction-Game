@@ -1,4 +1,4 @@
 # Chain-Reaction-Game
 
 Modelled the popular Android game "Chain Reaction". Install the game here https://play.google.com/store/apps/details?id=com.BuddyMattEnt.ChainReaction&hl=en
-We added functionality for single player as well using randomization based on probabilities.
+We added functionality for single player as well using randomization based on probabilities. Load Main.java
