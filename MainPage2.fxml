@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="420.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChainReaction.MainPage">
+   <children>
+      <Label layoutX="59.0" layoutY="14.0" text="Chain Reaction" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:src/ChainReaction/Logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="209.0" layoutY="52.0" startX="-100.0" stroke="#01eaff" strokeLineJoin="BEVEL" strokeWidth="2.0" style="-fx-scale-x: 2.1;" />
+      <Pane layoutY="56.0" prefHeight="621.0" prefWidth="420.0">
+         <children>
+            <Button fx:id="gotosettings" layoutX="282.0" layoutY="573.0" mnemonicParsing="false" onAction="#GoToSettings" prefHeight="42.0" prefWidth="132.0" style="-fx-background-color: rgb(25,25,25);" text="Player Settings" textFill="WHITE" />
+            <Label layoutX="154.0" layoutY="35.0" prefHeight="21.0" prefWidth="132.0" style="-fx-font-family: ARIAL; -fx-font-size: 18; -fx-text-fill: WHITE;" text="Chain Reaction" />
+            <Label layoutX="32.0" layoutY="285.0" lineSpacing="1.0" prefHeight="62.0" prefWidth="353.0" style="-fx-text-fill: WHITE; -fx-font-size: 12; -fx-font-family: ARIAL;" text="The objective of Chain Reaction is to take control of the board by eliminating your opponents orbs. " textAlignment="JUSTIFY" wrapText="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="32.0" layoutY="349.0" lineSpacing="1.0" prefHeight="139.0" prefWidth="353.0" text="Players take turns to place their obs in a cell. Once the cell has reached its criticaal mass the orbs explode into the surrounding cells adding an extra orb and claiming the cell of the player. A player may only place their orbs in a blank cell or a cell that contains orbs of their own colour. As soon as a player loses all their orbs, they are out of the game. " textAlignment="JUSTIFY" textFill="#fffbfb" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox1" layoutX="39.0" layoutY="84.0" onAction="#selectnumplayers" prefHeight="27.0" prefWidth="341.0" />
+            <Button layoutX="98.0" layoutY="196.0" mnemonicParsing="false" onAction="#StartGame" prefHeight="50.0" prefWidth="74.0" style="-fx-background-color: rgb(25,25,25);" text="Play" textFill="WHITE" />
+            <ComboBox fx:id="comboBox2" layoutX="39.0" layoutY="130.0" onAction="#selectgridsize" prefHeight="27.0" prefWidth="341.0" />
+            <Button layoutX="247.0" layoutY="196.0" mnemonicParsing="false" onAction="#ResumeGame" prefHeight="50.0" prefWidth="74.0" style="-fx-background-color: rgb(25,25,25);" text="Resume" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

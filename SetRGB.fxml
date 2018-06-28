@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="420.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChainReaction.ChooseColour">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="40.0" layoutY="174.0" mnemonicParsing="false" onAction="#getGreendata" prefHeight="43.0" prefWidth="331.0" style="-fx-background-color: BLACK;" text="Green&#10;Green Component of Player 1's Orb Colour" textFill="WHITE" />
+      <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:src/ChainReaction/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="19.0" prefHeight="27.0" prefWidth="235.0" text="Chain Reaction Preferences" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="209.0" layoutY="59.0" startX="-100.0" stroke="#01eaff" strokeLineJoin="BEVEL" strokeWidth="2.0" style="-fx-scale-x: 2.1;" />
+      <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="86.0" mnemonicParsing="false" onAction="#getReddata" prefHeight="43.0" prefWidth="331.0" style="-fx-background-color: BLACK;" text="Red&#10;Red Component of Player 1's Orb Colour" textFill="WHITE" />
+      <Line endX="100.0" layoutX="206.0" layoutY="132.0" startX="-100.0" stroke="#ebbebe73" style="-fx-scale-x: 1.6;" />
+      <Button alignment="BASELINE_LEFT" layoutX="40.0" layoutY="265.0" mnemonicParsing="false" onAction="#getBluedata" prefHeight="43.0" prefWidth="331.0" style="-fx-background-color: BLACK;" text="Blue&#10;Blue Component of Player 1's Orb Colour" textFill="WHITE" />
+      <Button fx:id="back" layoutX="5.0" layoutY="632.0" mnemonicParsing="false" onAction="#displaysettings" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: rgb(25,25,25);" text="Back" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Line endX="100.0" layoutX="207.0" layoutY="219.0" startX="-100.0" stroke="#ebbebe73" style="-fx-scale-x: 1.6;" />
+      <Line endX="100.0" layoutX="207.0" layoutY="311.0" startX="-100.0" stroke="#ebbebe73" style="-fx-scale-x: 1.6;" />
+      <TextField fx:id="red" alignment="CENTER" layoutX="93.0" layoutY="142.0" prefHeight="25.0" prefWidth="235.0" promptText="Enter Red Component Integer (0-255)" />
+      <TextField fx:id="blue" alignment="CENTER" layoutX="92.0" layoutY="323.0" prefHeight="25.0" prefWidth="235.0" promptText="Enter Blue Component Integer (0-255)" />
+      <TextField fx:id="green" alignment="CENTER" layoutX="93.0" layoutY="231.0" prefHeight="25.0" prefWidth="235.0" promptText="Enter Green Component Integer (0-255)" />
+      <Button fx:id="b" layoutX="184.0" layoutY="388.0" mnemonicParsing="false" onAction="#clickOK" prefHeight="43.0" prefWidth="54.0" style="-fx-background-color: rgb(25,25,25);" text="OK" textFill="WHITE" />
+   </children>
+</AnchorPane>
